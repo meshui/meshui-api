@@ -1,0 +1,32 @@
+swagger: "2.0"
+consumes:
+- application/json
+info:
+  title: Mesui API
+  description: ...
+  version: 0.0.1
+produces:
+- application/json
+schemes:
+- http
+# - https
+host: virtserver.swaggerhub.com
+basePath: /
+securityDefinitions:
+  key:
+    type: apiKey
+    name: x-token
+    in: header
+paths:
+  # Homepage
+  /:
+    get:
+      tags:
+        - Homepage
+      summary: Homepage
+      operationId: getHomepage
+      responses:
+        200:
+          description: Homepage response
+          schema:
+            $ref: "#/definitions/Ack"
