@@ -1,0 +1,8 @@
+############################## GLOBAL PARAMETERS ###############################
+
+# App
+APP_NAME="Meshui API"
+APP_ENVIRONMENT="development"
+
+# Log
+LOG_LEVEL="debug"
